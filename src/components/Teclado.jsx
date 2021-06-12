@@ -9,6 +9,7 @@ export const Teclado = (props) => {
         {teclas.map((tecla) => {
           return (
             <Tecla
+              colgar={colgar}
               key={tecla}
               tecla={tecla}
               teclaIntroducida={teclaIntroducida}
