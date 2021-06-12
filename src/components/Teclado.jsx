@@ -1,6 +1,6 @@
 import { Tecla } from "./Tecla";
 export const Teclado = (props) => {
-  const { teclas, setTeclaIntroducida, teclaIntroducida } = props;
+  const { teclas, setTeclaIntroducida, teclaIntroducida, colgar } = props;
   const borrarNumero = "borrar";
 
   return (
@@ -25,6 +25,7 @@ export const Teclado = (props) => {
                 teclaIntroducida.substring(0, teclaIntroducida.length - 1)
               )
             }
+            disabled={colgar}
           >
             {borrarNumero}
           </button>
