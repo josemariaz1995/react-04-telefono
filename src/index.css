@@ -111,3 +111,6 @@ li {
 .off {
   visibility: hidden !important;
 }
+.ocultar {
+  display: none;
+}
