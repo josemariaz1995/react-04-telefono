@@ -1,5 +1,5 @@
 export const Tecla = (props) => {
-  const { tecla, setTeclaIntroducida, teclaIntroducida } = props;
+  const { tecla, setTeclaIntroducida, teclaIntroducida, colgar } = props;
   return (
     <>
       <li>
@@ -10,6 +10,7 @@ export const Tecla = (props) => {
             }
             setTeclaIntroducida(teclaIntroducida + tecla.toString());
           }}
+          disabled={colgar}
         >
           {tecla}
         </button>

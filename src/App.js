@@ -9,6 +9,9 @@ function App() {
   const [teclaIntroducida, setTeclaIntroducida] = useState("");
   const [llamar, setLlamar] = useState(true);
   const [colgar, setColgar] = useState(false);
+  const limpiarDisplay = () => {
+    setTeclaIntroducida("");
+  };
   console.log(teclaIntroducida);
   return (
     <div className="contenedor">
@@ -23,6 +26,7 @@ function App() {
         <div className="acciones">
           <Display teclaIntroducida={teclaIntroducida} />
           <Acciones
+            limpiarDisplay={limpiarDisplay}
             llamar={llamar}
             setLlamar={setLlamar}
             colgar={colgar}
